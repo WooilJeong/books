@@ -125,3 +125,20 @@ export FLASK_APP=pybo
 
 - SQLAlchemy
 - Flask-Migrate
+```bash
+# 최초 1회 실행
+flask db init
+# 모델 새로 생성 혹은 변경 시
+flask db migrate
+# 모델 변경 내용 실제 DB적용 시
+flask db upgrade
+```
+
+### 모델 생성
+
+- 모델: 모델은 데이터를 다룰 목적으로 만든 파이썬 클래스
+- 질문, 답변에 해당하는 모델 필요
+- 질문 모델
+  - id, subject, content, create_date
+- 답변 모델
+  - id, question_id, content, create_date
