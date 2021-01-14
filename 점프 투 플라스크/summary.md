@@ -142,4 +142,3 @@ flask db upgrade
   - id, subject, content, create_date
 - 답변 모델
   - id, question_id, content, create_date
-
